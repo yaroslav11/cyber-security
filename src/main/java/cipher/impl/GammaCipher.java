@@ -36,7 +36,7 @@ public class GammaCipher implements Cipher {
         return antiKey;
     }
 
-    void verifyKey(String key) {
+    private void verifyKey(String key) {
         if (key == null || key.isEmpty()) {
             throw new IllegalStateException("Invalid key");
         }

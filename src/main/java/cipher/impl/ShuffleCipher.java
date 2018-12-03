@@ -62,7 +62,7 @@ public class ShuffleCipher implements Cipher {
         return antiKey;
     }
 
-    void verifyKey(int[] key) {
+    private void verifyKey(int[] key) {
         List listKey = Arrays.asList(key);
         for (int i = 0; i < listKey.size(); i++) {
             if (!listKey.contains(i)) {
